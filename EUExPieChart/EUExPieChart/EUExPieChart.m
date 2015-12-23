@@ -63,7 +63,7 @@
             }
         }
         //背景
-        NSString *str = [[NSBundle mainBundle] pathForResource:@"uexPieChart/bingtu-mask" ofType:@"png"];
+        NSString *str = [[UEX_BUNDLE resourcePath] stringByAppendingPathComponent:@"bingtu-mask.png"];
         NSData *imageData = [NSData dataWithContentsOfFile:str];
         UIImage *image = [UIImage imageWithData:imageData];
         int centerX = [width floatValue] / 2.0-28;

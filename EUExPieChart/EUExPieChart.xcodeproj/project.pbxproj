@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42EE60F31C2AA104007CFCB4 /* bingtu-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EE60F21C2AA104007CFCB4 /* bingtu-mask.png */; };
 		5A9FF2A91890B22D00E16C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9FF2A81890B22D00E16C52 /* Foundation.framework */; };
 		5A9FF2B01890B22D00E16C52 /* EUExPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FF2AF1890B22D00E16C52 /* EUExPieChart.m */; };
 		5A9FF2E31890B2D500E16C52 /* BTSPieLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FF2DD1890B2D500E16C52 /* BTSPieLayer.m */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		3C76C47618AB6D3800BBE8D1 /* EUExPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExPieChart.h; sourceTree = "<group>"; };
+		42EE60EC1C2AA0B9007CFCB4 /* uexPieChart.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexPieChart.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE60F21C2AA104007CFCB4 /* bingtu-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bingtu-mask.png"; sourceTree = "<group>"; };
 		5A9FF2A51890B22D00E16C52 /* libuexPieChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexPieChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9FF2A81890B22D00E16C52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A9FF2AC1890B22D00E16C52 /* EUExPieChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExPieChart-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42EE60E91C2AA0B9007CFCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A9FF2A21890B22D00E16C52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42EE60ED1C2AA0B9007CFCB4 /* uexPieChartBundle */ = {
+			isa = PBXGroup;
+			children = (
+				42EE60F21C2AA104007CFCB4 /* bingtu-mask.png */,
+			);
+			path = uexPieChartBundle;
+			sourceTree = "<group>";
+		};
 		5A9FF29C1890B22D00E16C52 = {
 			isa = PBXGroup;
 			children = (
 				5A9FF2AA1890B22D00E16C52 /* EUExPieChart */,
+				42EE60ED1C2AA0B9007CFCB4 /* uexPieChartBundle */,
 				5A9FF2A71890B22D00E16C52 /* Frameworks */,
 				5A9FF2A61890B22D00E16C52 /* Products */,
 			);
@@ -76,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5A9FF2A51890B22D00E16C52 /* libuexPieChart.a */,
+				42EE60EC1C2AA0B9007CFCB4 /* uexPieChart.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +178,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		42EE60EB1C2AA0B9007CFCB4 /* uexPieChartBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE60F11C2AA0B9007CFCB4 /* Build configuration list for PBXNativeTarget "uexPieChartBundle" */;
+			buildPhases = (
+				42EE60E81C2AA0B9007CFCB4 /* Sources */,
+				42EE60E91C2AA0B9007CFCB4 /* Frameworks */,
+				42EE60EA1C2AA0B9007CFCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexPieChartBundle;
+			productName = uexPieChartBundle;
+			productReference = 42EE60EC1C2AA0B9007CFCB4 /* uexPieChart.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		5A9FF2A41890B22D00E16C52 /* EUExPieChart */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9FF2C81890B22D00E16C52 /* Build configuration list for PBXNativeTarget "EUExPieChart" */;
@@ -183,6 +220,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = xll;
+				TargetAttributes = {
+					42EE60EB1C2AA0B9007CFCB4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = 5A9FF2A01890B22D00E16C52 /* Build configuration list for PBXProject "EUExPieChart" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -197,11 +239,30 @@
 			projectRoot = "";
 			targets = (
 				5A9FF2A41890B22D00E16C52 /* EUExPieChart */,
+				42EE60EB1C2AA0B9007CFCB4 /* uexPieChartBundle */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		42EE60EA1C2AA0B9007CFCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE60F31C2AA104007CFCB4 /* bingtu-mask.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		42EE60E81C2AA0B9007CFCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A9FF2A11890B22D00E16C52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +277,56 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		42EE60EF1C2AA0B9007CFCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexPieChartBundle;
+				PRODUCT_NAME = uexPieChart;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42EE60F01C2AA0B9007CFCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexPieChartBundle;
+				PRODUCT_NAME = uexPieChart;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		5A9FF2C61890B22D00E16C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +430,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42EE60F11C2AA0B9007CFCB4 /* Build configuration list for PBXNativeTarget "uexPieChartBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE60EF1C2AA0B9007CFCB4 /* Debug */,
+				42EE60F01C2AA0B9007CFCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5A9FF2A01890B22D00E16C52 /* Build configuration list for PBXProject "EUExPieChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

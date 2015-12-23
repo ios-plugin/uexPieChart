@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:uexPieChart.xcodeproj">
+      location = "self:EUExPieChart.xcodeproj">
    </FileRef>
 </Workspace>
